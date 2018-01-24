@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <form class="main__interactive" action="/">
+      <span class="main__title"></span>
+      <div class="main__message"></div>
+      <input class="main__input" id="calc_input" type="tel" readonly="true" tabindex="0" />
+      <div class="main__board">
+        <!-- <input type="button" class="btn  btn--red" id="btnC" value="C"> -->
+
+        <button class="btn  btn--red" id="btnC">C</button>
+        <button class="btn" id="btn7">(</button>
+        <button class="btn" id="btn8">)</button>
+        <button class="btn" id="btnDel"> &lt;=</button>
+
+        <button class="btn" id="btnPerc">%</button>
+        <button class="btn" id="btnDiv">/</button>
+
+        <button class="btn" id="btn7">7</button>
+        <button class="btn" id="btn8">8</button>
+        <button class="btn" id="btn9">9</button>
+        <button class="btn" id="btnMult">*</button>
+
+        <button class="btn" id="btn4">4</button>
+        <button class="btn" id="btn5">5</button>
+        <button class="btn" id="btn6">6</button>
+        <button class="btn" id="btnSub">-</button>
+
+        <button class="btn" id="btn1">1</button>
+        <button class="btn" id="btn2">2</button>
+        <button class="btn" id="btn3">3</button>
+        <button class="btn" id="btnAdd">+</button>
+
+        <button class="btn" id="btnPower">x
+          <i class="upper-index">y</i>
+        </button>
+        <button class="btn" id="btn0">0</button>
+        <button class="btn" id="btnDecimalPoint">.</button>
+        <button class="btn" id="btnEqual">=</button>
+      </div>
+    </form>
+    <!--  <img style="display:block;height:300px; " src="https://habrastorage.org/files/9db/159/f0d/9db159f0dc0c4028b3bbc91e81274341.jpg
+          " alt=" ">-->
+  </div>
+</body>
+<script async src="js/script.js "></script>
+
+</html>
