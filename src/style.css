@@ -8,8 +8,8 @@ body {
 .main__interactive {
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.02),
-    rgba(0, 0, 0, 0.2)
+    rgba(209, 210, 214, 0.3),
+    rgba(209, 210, 214, 1)
   );
   border: 3px solid #555;
   border-radius: 0.4rem;
@@ -36,10 +36,10 @@ body {
   /*  background-color: rgba(0, 0, 0, 0.15); */
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.15) 50%,
-    rgba(0, 0, 0, 0.15) 50%,
-    rgba(0, 0, 0, 0.5)
+    rgba(149, 165, 140, 0.9),
+    rgba(149, 165, 140, 0.25) 50%,
+    rgba(149, 165, 140, 0.25) 50%,
+    rgba(149, 165, 140, 0.9)
   );
   color: #000;
   display: block;
@@ -71,12 +71,6 @@ body {
   grid-auto-rows: minmax(4rem, auto);
   grid-gap: 0.2rem;
 }
-
-/* @media screen and (min-width: 36rem) {
-  .main__board {
-    grid-auto-rows: 4rem;
-  }
-} */
 
 .upper-index {
   position: relative;
