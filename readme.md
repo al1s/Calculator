@@ -1,7 +1,6 @@
-User Story: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
-User Story: I can click a button to see a random Wikipedia entry.
+It's an approach to this - https://www.freecodecamp.org/challenges/build-a-javascript-calculator.
+User Story: I can add, subtract, multiply and divide two numbers.
 
-Hint #1: Here's a URL you can use to get a random Wikipedia article: https://en.wikipedia.org/wiki/Special:Random.
-Hint #2: Here's an entry on using Wikipedia's API: https://www.mediawiki.org/wiki/API:Main_page.
-Hint #3: Use this link to experiment with Wikipedia's API.
+User Story: I can clear the input field with a clear button.
 
+User Story: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.
