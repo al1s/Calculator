@@ -196,6 +196,8 @@ var inputProcessor = {
       btn0: '0',
       btnDecimalPoint: '.',
       btnEqual: '=',
+      btnLBr: '(',
+      btnRBr: ')',
       Enter: 'Enter',
       Backspace: 'Backspace',
     };
