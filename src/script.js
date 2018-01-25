@@ -249,8 +249,20 @@ var inputProcessor = {
     txtarea.scrollTop = scrollPos;
   },
 
+  vibrateOnTouch() {
+    if ('vibrate' in navigator) {
+      navigator.vibrate =
+        navigator.vibrate ||
+        navigator.webkitVibrate ||
+        navigator.mozVibrate ||
+        navigator.msVibrate;
+      navigator.vibrate(30);
+    }
+  },
+
   outputChr(e) {
     // console.log(e);
+    this.vibrateOnTouch();
     var chrToInsert = this.mapKeyToChr(e.target.id);
     this.insertAtCaret('calc_input', chrToInsert);
     e.preventDefault();
@@ -262,6 +274,7 @@ var inputProcessor = {
 
   clearInput(e) {
     // console.log(e);
+    this.vibrateOnTouch();
     var inputElm = document.getElementById('calc_input');
     inputElm.value = '';
     if (e) e.preventDefault();
@@ -310,6 +323,7 @@ var inputProcessor = {
   },
 
   getResultOnEqual(e) {
+    this.vibrateOnTouch();
     // we can't put cursor in the right position for numbers in input field, so convert explicitly
     var result = String(this.calcResult());
     // console.log(result);
@@ -329,6 +343,7 @@ var inputProcessor = {
     this.mapKeyToChr = this.mapKeyToChr.bind(this);
     this.calcResult = this.calcResult.bind(this);
     this.processKbdEntry = this.processKbdEntry.bind(this);
+    this.vibrateOnTouch = this.vibrateOnTouch.bind(this);
 
     document.querySelectorAll('.btn').forEach(btn => {
       if (btn.id === 'btnC') {
