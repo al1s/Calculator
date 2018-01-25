@@ -61,15 +61,22 @@ body {
 .main__board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 4rem;
+  grid-template-areas:
+    'btn__C     btn__l-bracket  btn__r-bracket  btn__del'
+    'btn__power btn__rem        btn__sub        btn__mult'
+    'btn__7     btn__8          btn__9          btn__add'
+    'btn__4     btn__5          btn__6          btn__add'
+    'btn__1     btn__2          btn__3          btn__equal'
+    'btn__div   btn__0          btn__point      btn__equal';
+  grid-auto-rows: minmax(4rem, auto);
   grid-gap: 0.2rem;
 }
 
-@media screen and (min-width: 36rem) {
+/* @media screen and (min-width: 36rem) {
   .main__board {
     grid-auto-rows: 4rem;
   }
-}
+} */
 
 .upper-index {
   position: relative;
@@ -93,6 +100,94 @@ body {
   /* background-image: linear-gradient(to bottom, rgb(182, 55, 55), #333); */
   background-image: none;
   background-color: rgb(170, 56, 56);
+}
+
+.btn__C {
+  grid-area: btn__C;
+}
+
+.btn__l-bracket {
+  grid-area: btn__l-bracket;
+}
+
+.btn__r-bracket {
+  grid-area: btn__r-bracket;
+}
+
+.btn__del {
+  grid-area: btn__del;
+}
+
+.btn__rem {
+  grid-area: btn__rem;
+}
+
+.btn__div {
+  grid-area: btn__div;
+}
+
+.btn__add {
+  grid-area: btn__add;
+}
+
+.btn__mult {
+  grid-area: btn__mult;
+}
+
+.btn__sub {
+  grid-area: btn__sub;
+}
+
+.btn__equal {
+  grid-area: btn__equal;
+}
+
+.btn__power {
+  grid-area: btn__power;
+}
+
+.btn__point {
+  grid-area: btn__point;
+}
+
+.btn__9 {
+  grid-area: btn__9;
+}
+
+.btn__8 {
+  grid-area: btn__8;
+}
+
+.btn__7 {
+  grid-area: btn__7;
+}
+
+.btn__6 {
+  grid-area: btn__6;
+}
+
+.btn__5 {
+  grid-area: btn__5;
+}
+
+.btn__4 {
+  grid-area: btn__4;
+}
+
+.btn__3 {
+  grid-area: btn__3;
+}
+
+.btn__2 {
+  grid-area: btn__2;
+}
+
+.btn__1 {
+  grid-area: btn__1;
+}
+
+.btn__0 {
+  grid-area: btn__0;
 }
 
 html {
